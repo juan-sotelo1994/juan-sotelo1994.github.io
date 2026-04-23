@@ -506,6 +506,44 @@
 }
 /*** footer End ***/
 
+/*** Badge Placeholder Start ***/
+.education-item.with-badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .education-item.with-badge {
+        flex-direction: row;
+    }
+}
+
+.education-item.with-badge .education-text {
+    flex: 1;
+    width: 100%;
+}
+
+.education-item.with-badge .education-badge {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #0b5ed7; /* Bootstrap primary color */
+    border-radius: 10px;
+    background-color: rgba(11, 94, 215, 0.05);
+}
+
+.education-item.with-badge .education-badge img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+/*** Badge Placeholder End ***/
 
 
 
